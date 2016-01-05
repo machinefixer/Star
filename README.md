@@ -1,5 +1,5 @@
 # Star
-###Exhibit pages for my iOS App GitStar
+###Exhibition pages for my iOS App GitStar
 
 For some reason, I choose to create a new repo to exhibit my app rather than build the web page on gh-pages branch from the existied priate repo's master branch.
 

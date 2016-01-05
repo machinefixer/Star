@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #7793D4;
+}
+
+.app-screenshot, .app-introduction {
+    display: inline-block;
+}
+
+.app-screenshot {
+    width: 730px;
+}
+
+.app-introduction {
+    width: 580px;
+}
+
+.black, .silver {
+    margin-top: 80px;
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.black img, .silver img {
+    max-width: 300px;
+}
+
+.app-logo {
+    margin-left: 50%;
+    /*margin-bottom: 40%;*/
+}
+
+.app-logo img {
+    width: 180px;
+    height: auto;
+}
+
+.app-intro {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #E6EAF3;
+}
+
+.app-intro h1 {
+    font-size: 47px;
+    font-weight: 300;
+    letter-spacing: 0.76px;
+}
+
+.app-intro h3 {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.44px;
+}
+
+.rights {
+    color: #E6EAF3;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.44px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rights a {
+    color: #E6EAF3;
+    text-decoration-color: #E6EAF3;
+}
