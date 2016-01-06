@@ -8,16 +8,21 @@ body {
 }
 
 .app-screenshot {
-    width: 730px;
+    width: 750px;
 }
 
 .app-introduction {
-    width: 580px;
+    width: 500px;
+    vertical-align: top;
+}
+
+.black {
+    margin-left: 80px;
+    margin-right: 60px;
 }
 
 .black, .silver {
     margin-top: 80px;
-    margin-left: 60px;
     display: inline-block;
 }
 
@@ -26,8 +31,8 @@ body {
 }
 
 .app-logo {
-    margin-left: 50%;
-    /*margin-bottom: 40%;*/
+    margin-left: 240px;
+    margin-top: 100px;
 }
 
 .app-logo img {
@@ -38,6 +43,8 @@ body {
 .app-intro {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #E6EAF3;
+    margin-left: 260px;
+    margin-top: -28px;
 }
 
 .app-intro h1 {
@@ -49,7 +56,58 @@ body {
 .app-intro h3 {
     font-size: 20px;
     font-weight: 100;
-    letter-spacing: 0.44px;
+    letter-spacing: 1.50px;
+    text-align: center;
+    margin-left: -86px;
+    margin-top: -25px;
+}
+
+.app-download-buttons {
+    margin-left: 245px;
+    margin-top: 32px;
+}
+
+.download-iOS-button, .download-android-button {
+    display: block;
+    height: 60px;
+    width: 180px;
+    background-color: transparent;
+    border: 2px solid #E6EAF3;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #E6EAF3;
+    font: 100 23px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.button-image {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.iOS-image {
+    width: 30px;
+    height: auto;
+}
+.android-image {
+    width: 30px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.button-text {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.download-iOS-button {
+    margin-bottom: 10px;
 }
 
 .rights {
