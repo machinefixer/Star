@@ -42,12 +42,12 @@
             <div class="app-download-buttons">
                 <div class="download-iOS-button">
                         <img class="button-image iOS-image" src="assets/img/apple-logo.png" alt="apple"/>
-                        <p class="button-text">App Store</p>
+                        <p class="button-text"><a href="#" class="btn trigger ios">App Store</a></p>
                 </div>
                 <div class="download-android-button">
                     <div>
                         <img class="button-image android-image" src="assets/img/android-logo.png" alt="android"/>
-                        <p class="button-text">Android</p>
+                        <p class="button-text"><a href="#" class="btn trigger android">Android</a></p>
                     </div>
                 </div>
         </div>
@@ -55,6 +55,52 @@
 
         <p class="rights">© 2016 <a href="https://github.com/machinefixer">yuchen</a> all rights reserved.</p>
     </div>
+
+    <!--QR-Code Modal-->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="head">
+                <a class="btn-close trigger" href="javascript:;"></a>
+            </div>
+            <div class="content">
+            </div>
+        </div>
+    </div>
+    <!--QR-Code Modal End-->
+
+    <script src="assets/js/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/detectmobilebrowser.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $('.trigger').click(function() {
+                if (!jQuery.browser.mobile) {
+                    $('.modal-wrapper').toggleClass('open');
+                    $('.page-wrapper').toggleClass('blur');
+
+                    if ($(this).is('.ios')) {
+                        var image = $("<img />", {"src": "assets/img/GitStar-QR-iOS.png"}).css({"max-width": "250px",
+                                                                                                "max-height": "250px",
+                                                                                                "margin": "auto",
+                                                                                                "display": "block"});
+
+                        $('.content').empty().prepend(image);
+                    }
+                    else if ($(this).is('.android')) {
+                        console.log("android button clicked");
+                        var text = $("<h3>Android version is coming soon...</h3>").css({
+                            "color": "#fff",
+                            "margin": "auto",
+                            "text-align": "center",
+                            "font-size": "18px",
+                            "width": "100%"
+                        });
+                        $('.content').empty().prepend(text);
+                    }
+                    return false;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
