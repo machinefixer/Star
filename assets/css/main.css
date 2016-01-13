@@ -121,8 +121,7 @@ a.btn {
     font-weight: 200;
     letter-spacing: 0.44px;
     text-align: center;
-    position: fixed;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
 }
 
